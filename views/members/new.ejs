@@ -1,0 +1,23 @@
+<h2>New Member</h2>
+
+<form action="/members" method="POST">
+	<div class="form-row">
+		<label class="form-item" name="first_name">First Name</label>
+		<input class="form-item" type="text" name="first_name" value="">
+	</div>
+	<div class="form-row">
+		<label class="form-item" name="last_name">Last Name</label>
+		<input class="form-item" type="text" name="last_name" value="">
+	</div>
+	<div class="form-row">
+		<label class="form-item" name="email">Email</label>
+		<input class="form-item" type="text" name="email" value="">
+	</div>
+	<div class="form-row">
+		<label class="form-item" name="phone">Phone</label>
+		<input class="form-item" type="tel" name="phone" value="" pattern="[0-9]{3}.[0-9]{3}.[0-9]{4}" title="###.###.####" required>
+	</div>
+	<a href="/members">Cancel</a>
+	<button type="submit">Create</button>	
+</form>
+

@@ -1,0 +1,110 @@
+
+<script type="text/javascript">
+	window.onload = function() {
+		var type = "<%= editTrainingProgram.trainingProgramType %>"
+		var level = "<%= editTrainingProgram.level %>"
+		var age = "<%= editTrainingProgram.genderAge %>"
+		var classSelectors = [ "radioProgramType", "radioProgramLevel", "radioProgramAge" ]
+
+		var classSelectorItems = document.getElementsByClassName(classSelectors[2])
+		for (let i = 0; i <= classSelectorItems.length; i++) {
+			if ( age == classSelectorItems[i].value ) {
+				classSelectorItems[i].checked = true;
+			}
+		}
+	}
+</script>
+
+<h1>Edit Training Program Details</h1>
+
+<form class="program-detail" action="/trainingPrograms/<%= editTrainingProgram.id %>?_method=PUT" method="POST">
+	<div class="form-side">
+		<fieldset>
+			<legend>Program Type</legend>
+			<div class="form-radio">
+				<input class="radioProgramType" type="radio" name="trainingProgramType" value="Jiu-Jitsu Gi">
+				<label class="radio-items" name="trainingProgramType">Jiu-Jitsu Gi</label>
+			</div>
+		
+			<div class="form-radio">
+				<input class="radioProgramType" type="radio" name="trainingProgramType" value="Jiu-Jitsu NoGi">
+				<label name="trainingProgramType">Jiu-Jitsu NoGi</label>
+			</div>
+		
+			<div class="form-radio">
+				<input class="radioProgramType" type="radio" name="trainingProgramType" value="Muay Thai">
+				<label name="trainingProgramType">Muay Thai</label>
+			</div>
+		
+			<div class="form-radio">
+				<input class="radioProgramType" type="radio" name="trainingProgramType" value="Mixed-Martial-Arts">
+				<label name="trainingProgramType">Mixed-Martial-Arts</label>
+			</div>
+		
+			<div class="form-radio">
+				<input class="radioProgramType" type="radio" name="trainingProgramType" value="Seminar">
+				<label name="trainingProgramType">Seminar</label>
+			</div>
+		
+			<div class="form-radio">
+				<input class="radioProgramType" type="radio" name="trainingProgramType" value="Other">
+				<label name="trainingProgramType">Other</label>
+			</div>
+		</fieldset>
+
+		<fieldset>
+			<legend>Program Experience Level</legend>
+				<div class="form-radio">
+					<input class="radioProgramLevel" type="radio" name="level" value="Beginner">
+					<label name="level">Beginner</label>
+				</div>
+				<div class="form-radio">
+					<input class="radioProgramLevel" type="radio" name="level" value="Intermediate">
+					<label name="level">Intermediate</label>
+				</div>
+				<div class="form-radio">
+					<input class="radioProgramLevel" type="radio" name="level" value="Advanced">
+					<label name="level">Advanced</label>
+				</div>
+		</fieldset>
+		<fieldset>
+			<legend>Program</legend>
+			<div class="form-radio">
+				<input class="radioProgramAge" type="radio" name="genderAge" value="Adult">
+				<label name="genderAge">Adult</label>
+			</div>
+			<div class="form-radio">
+				<input class="radioProgramAge" type="radio" name="genderAge" value="Women's">
+				<label name="genderAge">Women's</label>
+			</div>
+			<div class="form-radio">
+				<input class="radioProgramAge" type="radio" name="genderAge" value="Kids">
+				<label name="genderAge">Kids</label>
+			</div>
+		</fieldset>
+			
+		
+	</div><!-- class="form-side" -->
+	<div class="form-main">
+		<div class="form-row">
+			<label class="form-item" name="trainingProgramTitle">Training Session Title</label>
+			<input class="form-item" type="text" name="trainingProgramTitle" value="<%= editTrainingProgram.trainingProgramTitle %>">
+		</div>
+		<div class="form-row">
+			<label class="form-item" name="description">Training Session Description</label>
+			<textarea class="form-item" name="description" value=""><%= editTrainingProgram.description %></textarea>
+		</div>
+		<div class="form-row">
+			<button class="form-item" type="submit">UpDate</button>
+		</div>
+</div><!-- class="form-main" -->
+</form>
+
+
+
+
+
+
+
+
+

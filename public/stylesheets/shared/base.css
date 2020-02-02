@@ -1,0 +1,28 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'open sans', 'helvetica', sans-serif;
+  font-size: 16px;
+  background-color: ;
+  min-height: 100vh;
+  height: auto;
+  /*background-position: center;*/
+  /*background-size: 100%;*/
+  /*background-repeat: no-repeat;*/
+}
+
+body {
+  position: absolute;
+  width: 100%;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding: .5em;
+}
+
+.content {
+  margin: 0 auto;
+  margin-top: 5em;
+}

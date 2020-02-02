@@ -1,0 +1,19 @@
+<div class=showMember>
+	<span class="member-name">
+		<%= showMember.name %>
+	</span><br>
+	<span class="member-email">
+		<%= showMember.email %>
+	</span><br>
+	<span class="member-phone">
+		<%= showMember.phone %>
+	</span>
+	<div class="options">
+		<a class="block" href="/members/<%= showMember.id %>">View</a>
+		<a class="block" href="/members/<%= showMember.id %>/edit">Edit</a>
+		<form class="block" method="POST" action="/members/<%= showMember.id %>?_method=DELETE">
+			<button type="submit">Delete</button>
+		</form>
+	</div>
+</div>
+

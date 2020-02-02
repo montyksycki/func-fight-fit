@@ -1,0 +1,54 @@
+<h1>All Members</h1>
+
+<div class="create-new-member-form">
+	<form action="/members" method="POST">
+		<div class="form-row">
+			<input class="form-item" type="text" name="first_name" value="" placeholder="+ New Member First Name">
+			<input class="form-item" type="text" name="last_name" value="" placeholder="+ New Member Last Name">
+			<input class="form-item" type="text" name="email" value="" placeholder="+ New Memeber Email">
+			<input class="form-item" type="text" name="phone" value="" placeholder="+ New Memeber Phone">
+		</div>
+		<div class="form-row">
+			<button class="form-button" type="submit">Create</button>	
+			<a class="form-button" href="/members">Cancel</a>
+		</div>
+	</form>
+</div>
+
+<% members.forEach(member => { %>
+<table class="table-basic">
+	<thead></thead>
+	<tbody>
+		<tr>
+			<th class="centerText">Name</th>
+			<th class="centerText">Email</th>
+			<th class="centerText">Phone</th>
+		</tr>
+		<tr>
+			<td class="centerText"><%= member.first_name %> <%= member.last_name %></td>
+			<td class="centerText"><%= member.email %></td>
+			<td class="centerText"><%= member.phone %></td>
+		</tr>
+		<tr>
+			<th>Id</th>
+			<th>Instructor</th>
+			<th>Admin</th>
+		</tr>
+		<tr>
+			<td class="centerText"><%= member.id %></td>
+			<td class="centerText"><%= member.instructor %></td>
+			<td class="centerText"><%= member.admin %></td>
+		</tr>
+		<tr>
+			<th colspan="3">options</th>
+		</tr>
+		<tr>
+			<td class="option-buttons"><a href="/members/<%= member.id %>">view</a></td>
+			<td class="option-buttons"><a href="/members/<%= member.id %>/edit">edit</a></td>
+			<td class="option-buttons"><form method="POST" action="/members/<%= member.id %>?_method=DELETE"><button class="" type="submit">delete</button>
+			</form></td>
+		</tr>
+	</tbody>
+	<tfoot></tfoot>
+</table>
+<% }) %>

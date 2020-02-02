@@ -1,0 +1,74 @@
+
+
+	h1 {
+		font-size: 2.5rem;
+		text-align: center;
+	}
+
+	h2 {
+		font-size: 2rem;
+		text-align: center;
+	}
+
+	.member-box {
+		width: 20em;
+		margin: 0 auto .5em;
+		border: 1px solid;
+		border-radius: 1.5em;
+		padding: .5em;
+	}
+
+	.member-info {
+		text-align: center;
+		padding: .5em;
+	}
+
+	.delete-button {
+		display: inline;
+	}
+
+	.options {
+		text-align: center;
+		margin: 0 auto;
+		width: 10em;
+	}
+
+	.bold {
+		font-weight: 600;
+		font-size: 1.5rem;
+	}
+
+
+	.showMember {
+		width: 50em;
+		margin: 2em auto;
+		padding: 1em;
+		border: solid 1px ;
+		border-radius: 2em;
+
+	}
+
+	.member-name {
+		font-size: 3rem;
+		font-weight: 600;
+		display: block;
+		text-align: center;
+	}
+
+	.member-email, .member-id {
+		font-size: 1.5rem;
+		font-style: italic;
+		display: block;
+		text-align: center;
+	}
+
+	.options {
+		text-align: center;
+		margin: 0 auto;
+		width: 10em;
+		padding: 1em;
+	}
+
+	.block {
+		display: inline-block;
+	}

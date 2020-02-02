@@ -1,0 +1,60 @@
+.table-basic {
+	width: 100%;
+	/*text-align: center;*/
+	border-collapse: collapse;
+	margin: 2em 0;
+	table-layout: fixed;
+	border: solid 1px black;
+	border-top: 4px solid black;
+	padding: 1em;
+}
+
+.centerText {
+	text-align: center;
+}
+
+.option-buttons {
+	font-size: 1.25rem;
+	text-align: center;
+	padding: .5em;
+	/*border: none;*/
+	text-transform: uppercase;
+}
+
+th {
+	font-size: 1.15rem;
+	background-color: #eee;
+	padding: .75em 0;
+	color: ;
+}
+
+td {
+	/*border: none;*/
+	padding: .5em;
+	border: solid 1px black;
+	font-size: 1rem;
+	/*font-family: monospace;*/
+}
+
+td a, td button {
+	font-size: inherit;
+	text-decoration: none;
+	text-transform: inherit;
+	color: red ;
+}
+
+.name {
+	/*font-weight: 900;*/
+	font-size: 1.5rem;
+}
+
+/*.member-table  {
+	table-layout: auto;
+	width: 100%;
+	border-collapse: collapse;
+	margin: 0 auto;
+	border: solid 1px;
+	padding: .4em;
+}*/
+
+

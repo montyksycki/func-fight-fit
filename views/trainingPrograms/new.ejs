@@ -1,0 +1,86 @@
+<h1>Create A New Program Detail</h1>
+<% var program = newTrainingProgram %>
+
+<!-- 	trainingProgramType
+	level
+	genderAge
+	trainingProgramTitle
+	description -->
+
+<form class="program-detail" action="/trainingPrograms" method="POST">
+	<div class="form-side">
+		<div class="form-row radio-buttons">
+			<h4>Program Type</h4>
+			<div class="radio-group">
+				<input class="radio-items" type="radio" name="trainingProgramType" value="Jiu-Jitsu Gi">
+				<label class="radio-items" name="trainingProgramType">Jiu-Jitsu Gi</label>
+			</div>
+			<div class="radio-group">
+				<input type="radio" name="trainingProgramType" value="Jiu-Jitsu NoGi">
+				<label name="trainingProgramType">Jiu-Jitsu NoGi</label>
+			</div>
+			<div class="radio-group">
+				<input type="radio" name="trainingProgramType" value="Muay Thai">
+				<label name="trainingProgramType">Muay Thai</label>
+			</div>
+			<div class="radio-group">
+				<input type="radio" name="trainingProgramType" value="Mixed-Martial-Arts">
+				<label name="trainingProgramType">Mixed-Martial-Arts</label>
+			</div>
+			<div class="radio-group">
+				<input type="radio" name="trainingProgramType" value="Seminar">
+				<label name="trainingProgramType">Seminar</label>
+			</div>
+			<div class="radio-group">
+				<input type="radio" name="trainingProgramType" value="Other">
+				<label name="trainingProgramType">Other</label>
+			</div>
+		</div>
+		<div class="form-row radio-buttons">
+			<h4>Program Experience Level</h4>
+			<div class="radio-group">
+				<input class="" type="radio" name="level" value="Beginner">
+				<label class="" name="level">Beginner</label>
+			</div>
+			<div class="radio-group">
+				<input class="" type="radio" name="level" value="Intermediate">
+				<label class="" name="level">Intermediate</label>
+			</div>
+			<div class="radio-group">
+				<input class="" type="radio" name="level" value="Advanced">
+				<label class="" name="level">Advanced</label>
+			</div>
+		</div>
+		<div class="form-row radio-buttons">
+			<h4>Program</h4>
+			<div class="radio-group">
+				<input class="" type="radio" name="genderAge" value="Adult">
+				<label class="" name="genderAge">Adult</label>
+			</div>
+			<div class="radio-group">
+				<input class="" type="radio" name="genderAge" value="Womens">
+				<label class="" name="genderAge">Women's</label>
+			</div>
+			<div class="radio-group">
+				<input class="" type="radio" name="genderAge" value="Kids">
+				<label class="" name="genderAge">Kids</label>
+			</div>
+		</div>
+	</div><!-- class="form-side" -->
+	<div class="form-main">
+		<div class="form-row">
+			<label class="form-item" name="trainingProgramTitle">Training Session Title</label>
+			<input class="form-item" type="text" name="trainingProgramTitle" value="<%= program.trainingProgramId %>">
+		</div>
+		<div class="form-row">
+			<label class="form-item" name="description">Training Session Description</label>
+			<textarea class="form-item" name="description"><%= program.description %></textarea>
+		</div>
+		<div class="form-row">
+			<button class="form-item" type="submit">Create</button>
+		</div>
+</div><!-- class="form-main" -->
+</form>
+
+
+

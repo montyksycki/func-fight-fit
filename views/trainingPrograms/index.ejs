@@ -1,0 +1,39 @@
+<H1>Training Program Details</H1>
+
+<% trainingPrograms.forEach(trainingProgram => { %>
+<table class="table-basic">
+	<thead></thead>
+	<tbody>
+		<tr>
+			<th>Program Type</th>
+			<th>Program Level</th>
+			<th>Program Age - Gender</th>
+		</tr>
+		<tr>
+			<td class="centerText"><%= trainingProgram.trainingProgramType %></td>
+			<td class="centerText"><%= trainingProgram.level %></td>
+			<td class="centerText"><%= trainingProgram.genderAge %></td>
+		</tr>
+		<tr>
+		<tr>
+			<th>Title</th>
+			<th colspan="2">Description</th>
+		</tr>
+		<tr>
+			<td class="centerText"><%= trainingProgram.trainingProgramTitle %></td>
+			<td class="" colspan="2"><%= trainingProgram.description%></td>
+		</tr>
+			<td class="option-buttons"><a class="options-link" href="/trainingPrograms/<%= trainingProgram.id %>">view</a></td>
+			<td class="option-buttons"><a class="options-link" href="/trainingPrograms/<%= trainingProgram.id %>/edit">edit</a></td>
+			<td class="option-buttons"><form method="POST" action="/trainingPrograms/<%= trainingProgram.id %>?_method=DELETE"><button class="" type="submit">delete</button>
+		</tr>
+	</tbody>
+	<tfoot></tfoot>
+</table>
+<% }) %>
+
+<!-- trainingProgramType
+level
+genderAge
+trainingProgramTitle
+description -->

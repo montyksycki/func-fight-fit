@@ -1,0 +1,26 @@
+	@import 'base.css';
+	@import 'style.css';
+	@import 'nav.css';
+	@import 'table.css';
+	@import 'form.css';
+
+	*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+	:root {
+		--base-color: 200;
+
+		/* NavBar Attributes */
+		--navbar-background-color: hsla(var(--base-color), 100%, 27%, 100%);
+		--navbar-bottom-border-color: hsla(var(--base-color), 100%, 40%, 100%);
+		--navbar-color: hsla(var(--base-color), 100%, 90%, 100%);
+		--navbar-hover-color: hsla(var(--base-color), 100%, 70%, 100%);
+
+
+		--form-button-background-color: hsla(var(--base-color), 100%, 27%, 100%);
+		--form-button-color: hsla(var(--base-color), 100%, 70%, 100%);
+		--form-button-border-color: hsla(var(--base-color), 100%, 20%, 100%);
+		--form-button-hover-color: hsla(var(--base-color), 100%, 40%, 100%);
+
+	}
