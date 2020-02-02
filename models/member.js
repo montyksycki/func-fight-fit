@@ -24,23 +24,23 @@ const memberSchema = new mongoose.Schema({
 	phone: {
 		type: String
 	},
-	title: {
-		type: String
-	},
-	instructor: {
-		type: Boolean,
-		default: false,
-		required: true
-	},
+	// title: {
+	// 	type: String
+	// },
+	// instructor: {
+	// 	type: Boolean,
+	// 	default: false,
+	// 	required: true
+	// },
 	// speciality: {
 	// 	type: String,
 	// 	required: true
 	// },
-	admin: {
-		type: Boolean,
-		default: false,
-		required: true
-	},
+	// admin: {
+	// 	type: Boolean,
+	// 	default: false,
+	// 	required: true
+	// },
 	createdAt: {
 		type: Date,
 		default: Date.now
