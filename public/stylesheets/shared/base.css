@@ -26,3 +26,9 @@ body {
   margin: 0 auto;
   margin-top: 5em;
 }
+
+.homepage-logo {
+  display: block;
+  height: 55em;
+  margin: 0 auto;
+}
