@@ -63,7 +63,7 @@ app.use('/schedules', schedulesRouter)
 
 // DATABASE
 const mongoose = require('mongoose')
-mongoose.set('createIndexes', true)
+// mongoose.set('createIndexes', true)
 mongoose.connect(process.env.DATABASE_URL, { useNewUrlParser: true, 
 																						 useUnifiedTopology: true,
 																						 useCreateIndex: true })
